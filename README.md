@@ -1,7 +1,6 @@
 # Kaggle-dog-breeds
-```
-### Kaggle dog breed identification challenge
-```
+### ```Kaggle dog breed identification challenge```
+
 https://www.kaggle.com/c/dog-breed-identification
 
 ### Pretrained models in Pytorch
