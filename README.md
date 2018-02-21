@@ -19,3 +19,6 @@ https://github.com/Cadene/pretrained-models.pytorch
 
 #### Parallelization
 Training batches are split into mini-batches and sent to 4 GPUs. 
+
+#### Model Ensemble
+At the end of each epoch, the logits are saved to disk whenever the validation accuracy reaches a record high. The logits of different models are combined by averaging and normalizing. The prediction is given by the combined logits.
