@@ -27,6 +27,7 @@ At the end of each epoch, the logits are saved to disk whenever the validation a
 1) Input image size before cropping. The larger the better.
 2) Cosine annealing of the learning rate. The network can reach almost the highest predictive accuracy in a few epochs. Allowing the learning rate to restart helps the model escape from bad local minima.
 3) Training the pretrained model in evaluation mode (model.eval()) results in a much higher accuracy. In traning mode, training accuracy for inception hovers around 80% (training and validation). In evalution mode, both accuracies get above 90%.
+4) Unfreezing the models and train with a small learning rate after fine-tuning helps resnext101_64x4d and inceptionresnetv2.
 
 ## Tuning the initial learning rate
 The batch size is fixed to be 64. The validation accuracy for each model in the first tuning stage (all but the last layer frozen) is shown below. Each model is trained for 10 epochs.
@@ -36,4 +37,5 @@ The batch size is fixed to be 64. The validation accuracy for each model in the 
 | 0.01          |0.9286           |0.9257             | 0.9091          |
 | 0.001         |0.9257           |0.9365             | 0.9247          |  
 | 0.0001 |0.9335| 0.9335| 0.9218|
+
 
