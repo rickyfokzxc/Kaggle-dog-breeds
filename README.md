@@ -25,4 +25,4 @@ At the end of each epoch, the logits are saved to disk whenever the validation a
 
 ## Factors that improve predictive accuracy
 1) Input image size before cropping. The larger the better.
-2) Cosine annealing of the learing rate leads to fast training, reaching almost the highest predictive accuracy in a few epochs.
+2) Cosine annealing of the learing rate leads to fast training, reaching almost the highest predictive accuracy in a few epochs. Allowing the learning rate to restart helps the model escape from bad local minima.
