@@ -11,8 +11,8 @@ https://github.com/Cadene/pretrained-models.pytorch
 
 |Ensemble | Test accuracy|
 | ------------- |:----------------|
-|[resnext101_64x4d, inceptionv4, inceptionresnetv2]*2 + resnext101_64x4d | 0.942 |
-|[resnext101_64x4d, inceptionresnetv2]*3 + resnext101_64x4d | 0.941|
+|[resnext101_64x4d, inceptionv4, inceptionresnetv2]*2 + resnext101_64x4d | 94.2 |
+|[resnext101_64x4d, inceptionresnetv2]*3 + resnext101_64x4d | 94.1|
 
 ![Training curves](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/errors.png)
 
