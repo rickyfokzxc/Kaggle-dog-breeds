@@ -40,5 +40,5 @@ The batch size is fixed to be 64. The validation accuracy for each model in the 
 #### Model Ensembles
 An average of model ensembles are known to outperform a single model. The code here is an incremental implementation of model averaging. The models are trained one by one over 4 GPUs using the same training and validation sets. For instance, a resnet, say, is trained on 4 GPUs using data parallelism before the next model is trained. After training each model, the classification probabilities for the validation set is sent to the CPU to save GPU memory. Only one copy of the probabilties is saved at any time. The probabilties are simply updated by summing with those from a new model. The CPU only stores one copy of the probability at all times and this allows the code to calculate an arbitrary large ensemble.
 
-The validation probability sent to the CPU is the one corresponding to the highest validation accuracy during training.
+The validation probability sent to the CPU is the one corresponding to the highest validation accuracy during training. This can be seen as using an early stopping strategy to prevent overfitting for each model.
 
