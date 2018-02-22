@@ -36,7 +36,7 @@ Training batches are split into mini-batches and sent to 4 GPUs.
 3) Unfreezing the models and train with a small learning rate after fine-tuning helps resnext101_64x4d and inceptionresnetv2.
 
 ## Tuning the initial learning rate
-The batch size is fixed to be 64. The validation accuracy for each model in the first tuning stage (all but the last layer frozen) is shown below. Each model is trained for 10 epochs. 
+The batch size is fixed to be 64. The validation accuracy for each model in the first tuning stage (all but the last layer frozen) is shown below. Each model is trained for 10 epochs. The chosen initial learning rate is 0.0003.
 
 | Learning Rate |   inceptionv4   | inceptionresnetv2 | resnext101_64x4d|
 | ------------- |:----------------|:------------------|:----------------|
