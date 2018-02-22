@@ -44,3 +44,4 @@ The validation probability sent to the CPU is the one corresponding to the highe
 |Ensemble | Test accuracy|
 | ------------- |:----------------|
 |[resnext101_64x4d, inceptionv4, inceptionresnetv2]*2 + resnext101_64x4d | 0.942 |
+|[resnext101_64x4d, inceptionresnetv2]*3 + resnext101_64x4d | 0.941|
