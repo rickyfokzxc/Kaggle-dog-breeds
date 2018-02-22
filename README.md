@@ -22,13 +22,12 @@ Training batches are split into mini-batches and sent to 4 GPUs.
 
 
 ## Factors that improve predictive accuracy
-1) Input image size before cropping. The larger the better.
-2) Cosine annealing of the learning rate. The network can reach almost the highest predictive accuracy in a few epochs. Allowing the learning rate to restart helps the model escape from bad local minima.
-3) Training the pretrained model in evaluation mode (model.eval()) results in a much higher accuracy. In traning mode, training accuracy for inception hovers around 80% (training and validation). In evalution mode, both accuracies get above 90%.
-4) Unfreezing the models and train with a small learning rate after fine-tuning helps resnext101_64x4d and inceptionresnetv2.
+1) Cosine annealing of the learning rate. The network can reach almost the highest predictive accuracy in a few epochs. Allowing the learning rate to restart helps the model escape from bad local minima.
+2) Training the pretrained model in evaluation mode (model.eval()) results in a much higher accuracy. In traning mode, training accuracy for inception hovers around 80% (training and validation). In evalution mode, both accuracies get above 90%.
+3) Unfreezing the models and train with a small learning rate after fine-tuning helps resnext101_64x4d and inceptionresnetv2.
 
 ## Tuning the initial learning rate
-The batch size is fixed to be 64. The validation accuracy for each model in the first tuning stage (all but the last layer frozen) is shown below. Each model is trained for 10 epochs.
+The batch size is fixed to be 64. The validation accuracy for each model in the first tuning stage (all but the last layer frozen) is shown below. Each model is trained for 10 epochs. The validation error approaches 6% at 10 epochs, 200 times faster than [1] where it took 2000 epochs to get there.
 
 | Learning Rate |   inceptionv4   | inceptionresnetv2 | resnext101_64x4d|
 | ------------- |:----------------|:------------------|:----------------|
@@ -42,3 +41,4 @@ An average of model ensembles are known to outperform a single model. The code h
 
 The validation probability sent to the CPU is the one corresponding to the highest validation accuracy during training. This can be seen as using an early stopping strategy to prevent overfitting for each model.
 
+[1]  https://towardsdatascience.com/dog-breed-classification-hands-on-approach-b5e4f88c333e 
