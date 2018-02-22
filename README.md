@@ -26,4 +26,4 @@ At the end of each epoch, the logits are saved to disk whenever the validation a
 ## Factors that improve predictive accuracy
 1) Input image size before cropping. The larger the better.
 2) Cosine annealing of the learning rate. The network can reach almost the highest predictive accuracy in a few epochs. Allowing the learning rate to restart helps the model escape from bad local minima.
-3) Training the pretrained model in evaluation mode (model.eval()) results in a much higher accuracy. In traning mode, training accuracy for inception hovers around 80%. In evalution mode, training accuracy gets above 90%.
+3) Training the pretrained model in evaluation mode (model.eval()) results in a much higher accuracy. In traning mode, training accuracy for inception hovers around 80% (training and validation). In evalution mode, both accuracies get above 90%.
