@@ -31,8 +31,8 @@ At the end of each epoch, the logits are saved to disk whenever the validation a
 ## Tuning the initial learning rate
 The batch size is fixed to be 64. The validation accuracy for each model in the first tuning stage (all but the last layer frozen) is shown below. Each model is trained for 10 epochs.
 
-| Learning Rate | resnext101_64x4d | inceptionv4 | inceptionresnetv2 |
-| ------------- |:----------------|:-----------|:-----------------|
-| 0.01          |0.9286            |0.9257       | 0.9091|
-| 0.001         |0.9257            |0.9365       | 0.9247|  
+| Learning Rate |   inceptionv4   | inceptionresnetv2 | resnext101_64x4d|
+| ------------- |:----------------|:------------------|:----------------|
+| 0.01          |0.9286           |0.9257             | 0.9091          |
+| 0.001         |0.9257           |0.9365             | 0.9247          |  
 
