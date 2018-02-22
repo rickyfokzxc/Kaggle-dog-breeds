@@ -7,6 +7,15 @@ https://www.kaggle.com/c/dog-breed-identification
 
 https://github.com/Cadene/pretrained-models.pytorch
 
+## Main Results
+
+|Ensemble | Test accuracy|
+| ------------- |:----------------|
+|[resnext101_64x4d, inceptionv4, inceptionresnetv2]*2 + resnext101_64x4d | 0.942 |
+|[resnext101_64x4d, inceptionresnetv2]*3 + resnext101_64x4d | 0.941|
+
+![Training curves](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/errors.png)
+
 ### Training strategy:
 #### First stage
 1) Load a pretrained model. Freezing all layers except the last linear layer.
@@ -41,9 +50,3 @@ An average of model ensembles are known to outperform a single model. The code h
 
 The validation probability sent to the CPU is the one corresponding to the highest validation accuracy during training. This can be seen as using an early stopping strategy to prevent overfitting for each model.
 
-|Ensemble | Test accuracy|
-| ------------- |:----------------|
-|[resnext101_64x4d, inceptionv4, inceptionresnetv2]*2 + resnext101_64x4d | 0.942 |
-|[resnext101_64x4d, inceptionresnetv2]*3 + resnext101_64x4d | 0.941|
-
-![Training curves](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/errors.png)
