@@ -20,8 +20,6 @@ https://github.com/Cadene/pretrained-models.pytorch
 #### Parallelization
 Training batches are split into mini-batches and sent to 4 GPUs. 
 
-#### Model Ensemble
-At the end of each epoch, the logits are saved to disk whenever the validation accuracy reaches a record high. The logits of different models are combined by averaging and normalizing. The prediction is given by the combined logits.
 
 ## Factors that improve predictive accuracy
 1) Input image size before cropping. The larger the better.
@@ -38,4 +36,9 @@ The batch size is fixed to be 64. The validation accuracy for each model in the 
 | 0.001         |0.9257           |0.9365             | 0.9247          |  
 | 0.0001 |0.9335| 0.9335| 0.9218|
 
+
+#### Model Ensembles
+An average of model ensembles are known to outperform a single model. The code here is an incremental implementation of model averaging. The models are trained one by one over 4 GPUs using the same training and validation sets. For instance, a resnet, say, is trained on 4 GPUs using data parallelism before the next model is trained. After training each model, the classification probabilities for the validation set is sent to the CPU to save GPU memory. Only one copy of the probabilties is saved at any time. The probabilties are simply updated by summing with those from a new model. The CPU only stores one copy of the probability at all times and this allows the code to calculate an arbitrary large ensemble.
+
+The validation probability sent to the CPU is the one corresponding to the highest validation accuracy during training.
 
