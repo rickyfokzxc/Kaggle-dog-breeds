@@ -26,6 +26,13 @@ Bull Mastiff             |  French bulldog | Kerry blue terrier | Walker Hound
 :-------------------------:|:-------------------------:|:------:|:---:|
 ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/correct/bull_mastiff.jpg)  |  ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/correct/french_bulldog.jpg) |![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/correct/kerry_blue_terrier.jpg) | ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/correct/walker_hound.jpg) |
 
+## Examples of wrong classifications
+We show the incorrectly classified dog breeds side by side with a picture of the correct breed from Google search.
+
+Incorrect             | Correct
+:---------------------:|:-----:|
+![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/incorrect/african_hunting_dog_(dhole).jpg)| ![](https://en.wikipedia.org/wiki/Dhole#/media/File:Indian_wild_dog_by_N._A._Naseer.jpg)|
+
 ### Training strategy:
 #### First stage
 1) Load a pretrained model. Freezing all layers except the last linear layer.
