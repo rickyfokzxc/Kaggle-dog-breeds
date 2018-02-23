@@ -4,7 +4,9 @@
 https://www.kaggle.com/c/dog-breed-identification
 
 ### Pretrained models in Pytorch
-We used the pretrained model downloadable at the link below. At the time of writing this can be done by the command ```pip install pretrainedmodels```
+We used the pretrained model downloadable at the link below. At the time of writing this can be done by the command
+
+```pip install pretrainedmodels```
 
 https://github.com/Cadene/pretrained-models.pytorch
 
