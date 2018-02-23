@@ -35,6 +35,12 @@ Image ID             | Prediction | Label |
 ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/incorrect/african_hunting_dog_(dhole).jpg)| ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/truth/African_hunting_dog.jpg)|![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/truth/dhole.jpg)|
 6487f0f5886fa4e46ef422d8069acb8d | Boston Bull | Pug |
 ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/incorrect/boston_bull_(pug).jpg) | ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/truth/Boston%20bull.jpg) | ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/truth/pug.jpg)|
+97338b5e572b8154cf9aa1e7fc507c92 | Bernese Mountain Dog | Greater Swiss Mountain Dog |
+![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/incorrect/bernese_mountain_dog_(greater_swiss_mountain_dog).jpg) |![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/truth/Bernese%20mountain%20dog.jpg)|![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/truth/greater%20swiss%20mountaindogs.jpg)|
+83bcff6b55ee179a7c123fa6103c377a | Stratfordshire Bull Terrier | American Stratfordshire Terrier |
+![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/incorrect/staffordshire_bullterrier_(american_staffordshire_terrier).jpg)|![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/truth/Stratfordshire%20bull%20terrier.jpg)|![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/truth/AmericanStaffordshireTerrierMountbrier.jpg)|
+
+
 
 ### Training strategy:
 #### First stage
