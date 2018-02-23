@@ -20,6 +20,11 @@ https://github.com/Cadene/pretrained-models.pytorch
 
 ![Training curves](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/errors.png)
 
+### Examples of correct classifications
+
+Bull Mastiff             |  French bulldog | Kerry blue terrier | Walker Hound
+:-------------------------:|:-------------------------:|:------:|:---:|
+![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/correct/bull_mastiff.jpg)  |  ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/correct/french_bulldog.jpg) |![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/correct/kerry_blue_terrier.jpg) | ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/correct/walker_hound.jpg) |
 
 ### Training strategy:
 #### First stage
