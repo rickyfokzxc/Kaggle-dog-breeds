@@ -29,8 +29,9 @@ Bull Mastiff             |  French bulldog | Kerry blue terrier | Walker Hound
 ## Examples of wrong classifications
 We show the incorrectly classified dog breeds side by side with a picture of the correct breed from Google search.
 
-Incorrect             | Correct
+Incorrect             | Prediction | Label | 
 :---------------------:|:-----:|
+!5353afdcaf0ad24196c1fdf1276ca644| African Hunting dog | Dhole |
 ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/incorrect/african_hunting_dog_(dhole).jpg)| ![](https://en.wikipedia.org/wiki/Dhole#/media/File:Indian_wild_dog_by_N._A._Naseer.jpg)|
 
 ### Training strategy:
