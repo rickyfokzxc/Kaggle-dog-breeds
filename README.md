@@ -29,10 +29,12 @@ Bull Mastiff             |  French bulldog | Kerry blue terrier | Walker Hound
 ## Examples of wrong classifications
 We show the incorrectly classified dog breeds side by side with a picture of the correct breed from Google search.
 
-Incorrect             | Prediction | Label | 
+Image ID             | Prediction | Label | 
 :---------------------:|:-----:|:------:|
-!5353afdcaf0ad24196c1fdf1276ca644| African Hunting dog | Dhole |
+5353afdcaf0ad24196c1fdf1276ca644| African Hunting dog | Dhole |
 ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/incorrect/african_hunting_dog_(dhole).jpg)| ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/truth/African_hunting_dog.jpg)|![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/truth/dhole.jpg)|
+6487f0f5886fa4e46ef422d8069acb8d | Boston Bull | Pug |
+![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/incorrect/boston_bull_(pug).jpg) | ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/truth/Boston%20bull.jpg) | ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/truth/pug.jpg)|
 
 ### Training strategy:
 #### First stage
