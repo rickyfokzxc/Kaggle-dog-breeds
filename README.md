@@ -27,7 +27,7 @@ Bull Mastiff             |  French bulldog | Kerry blue terrier | Walker Hound
 ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/correct/bull_mastiff.jpg)  |  ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/correct/french_bulldog.jpg) |![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/correct/kerry_blue_terrier.jpg) | ![](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/correct/walker_hound.jpg) |
 
 ## Examples of wrong classifications
-We show the incorrectly classified dog breeds side by side with a picture of the correct breed from Google search.
+We show the incorrectly classified dog breeds side by side with a picture of the correct breed from Google search. These images are picked randomly. In most, if not all, cases the predicted breed is closer to the image found by Google. The algorithm is doing a better job than the person labeling the data.
 
 Image ID             | Prediction | Label | 
 :---------------------:|:-----:|:------:|
