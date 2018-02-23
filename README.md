@@ -4,6 +4,7 @@
 https://www.kaggle.com/c/dog-breed-identification
 
 ### Pretrained models in Pytorch
+We used the pretrained model downloadable at the link below. At the time of writing this can be done by the command ```pip install pretrainedmodels```
 
 https://github.com/Cadene/pretrained-models.pytorch
 
@@ -13,6 +14,7 @@ https://github.com/Cadene/pretrained-models.pytorch
 | ------------- |:----------------|
 |[resnext101_64x4d, inceptionv4, inceptionresnetv2]*2 + resnext101_64x4d | 94.2 |
 |[resnext101_64x4d, inceptionresnetv2]*3 + resnext101_64x4d | 94.1|
+|ext101_64x4d', 'inceptionv4', 'inceptionresnetv2']| 94.6 |
 
 ![Training curves](https://github.com/rickyfokzxc/Kaggle-dog-breeds/blob/master/errors.png)
 
