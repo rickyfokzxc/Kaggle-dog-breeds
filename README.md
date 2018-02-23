@@ -41,7 +41,7 @@ Training batches are split into mini-batches and sent to 4 GPUs.
 
 
 ## Factors that improve predictive accuracy
-1) Cosine annealing of the learning rate. The network can reach almost the highest predictive accuracy in a few epochs. Allowing the learning rate to restart helps the model escape from bad local minima.
+1) Cosine annealing of the learning rate. The network can reach almost the highest predictive accuracy in a few epochs. Allowing the learning rate to restart helps the model escape from bad local minima. The cosine annealing rate is a proxy for the cyclical learning rate that has been shown to perform much better than conventional learning rate schedules, see https://arxiv.org/abs/1506.01186.
 2) Training the pretrained model in evaluation mode (model.eval()) results in a much higher accuracy. In traning mode, training accuracy for inception hovers around 80% (training and validation). In evalution mode, both accuracies get above 90%.
 3) Unfreezing the models and train with a small learning rate after fine-tuning helps resnext101_64x4d and inceptionresnetv2.
 
